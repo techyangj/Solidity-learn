@@ -1,0 +1,71 @@
+{
+	"id": "159f3bf8299f302ffa905ea14af354e3",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.15",
+	"solcLongVersion": "0.8.15+commit.e14f2714",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/Ballot.sol": {
+				"content": "// //SPDX-License-Identifier: GPL-3.0\n// pragma solidity >= 0.7.0 < 0.9;\n\n// contract Ballot {\n//     struct Voter {\n//         uint weight;\n//         bool voted;\n//         address delegate;\n//         uint vote;\n//     }\n\n//     struct Proposal {\n//         bytes32 name;\n//         uint voteCount;\n//     }\n\n//     address public chairperson;\n\n//     mapping(address => Voter) public voters;\n\n//     Proposal[] public proposals;\n\n//     constructor(bytes32[] memory proposalNames) {\n//         chairperson = msg.sender;\n//         voters[chairperson].weight = 1;\n//         for (uint i = 0; i < proposalNames.length; i++) {\n//             proposals.push(Proposal({\n//                 name: proposalNames[i],\n//                 voteCount: 0\n//             }));\n//         }\n//     }\n\n//     function giveRightToVote(address voter) external {\n//         require(msg.sender == chairperson,\"Only chairperson cna give right to vote.\");\n//         require(!voters[voter].voted,\"The voter already voted\");\n//         require(voters[voter].weight == 0);\n//         voters[voter].weight = 1;\n//     }\n\n//     function delegate(address to) external {\n//         Voter storage sender = voters[msg.sender];\n//         require(!sender.voted,\"You already voted\");\n//         require(to != msg.sender, \"Self-delegation is disallowed.\");\n\n//         while(voters[to].delegate != address(0)) {\n//             to = voters[to].delegate;\n//             require(to != msg.sender, \"Found loop in delegation.\");\n//         }\n//         Voter storage delegate_ = voters[to];\n\n//         require(delegate_.weight >= 1);\n//         sender.voted = true;\n//         sender.delegate = to;\n\n//         if (delegate_.voted) {\n//             proposals[delegate_.vote].voteCount += sender.weight;\n//         } else {\n//             delegate_.weight += sender.weight;\n//         }\n//     }\n\n//     function vote(uint proposal) external {\n//         Voter storage sender = voters[msg.sender];\n//         require(!sender.voted,\"Already voted.\");\n//         sender.voted = true;\n//         sender.vote = proposal;\n\n//         proposals[proposal].voteCount += sender.weight;\n//     }\n\n//     function winningProposal() external view returns (uint winningProposal_) {\n//         uint winningVoteCount = 0;\n//         for (uint p = 0; p < proposals.length; p++) {\n//             if(proposals[p].voteCount > winningVoteCount) {\n//                 winningVoteCount = proposals[p].voteCount;\n//                 winningProposal_ = p;\n//             }\n//         }\n//     }\n\n//     function winnerName() public view returns (bytes32 winnerName_) {\n//         winnerName_ = proposals[winningProposal()].name;\n//     }\n// }"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.15;\"\n--> contracts/Ballot.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.15;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/Ballot.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/Ballot.sol": {
+				"ast": {
+					"absolutePath": "contracts/Ballot.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "2680:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

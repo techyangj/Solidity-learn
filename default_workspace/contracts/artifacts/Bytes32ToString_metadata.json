@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_newname",
+						"type": "bytes32"
+					}
+				],
+				"name": "bytes32ToString",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Bytes32ToString.sol": "Bytes32ToString"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Bytes32ToString.sol": {
+			"keccak256": "0xcdd40203f934456dbccf8969ff53c81c3bfc814fd74f2cf14fc487333d470b98",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c7c12500b1ccfe4bf947cbbaffc0d531b72da39d09545d198d4340bae51cb03f",
+				"dweb:/ipfs/QmeghnDRL6n7HNYJKce9YWbHEbqEBkEiwN4gMgdJSK5FPB"
+			]
+		}
+	},
+	"version": 1
+}

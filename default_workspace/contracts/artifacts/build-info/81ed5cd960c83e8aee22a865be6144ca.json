@@ -1,0 +1,591 @@
+{
+	"id": "81ed5cd960c83e8aee22a865be6144ca",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.9",
+	"solcLongVersion": "0.8.9+commit.e5eed63a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/SimpleStorage.sol": {
+				"content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.8;\n\ncontract SimpleStorage {\n    bool hsaFaboriteNumber = true;\n    uint256 favoriteNumber = 5;\n    \n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/SimpleStorage.sol": {
+				"SimpleStorage": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/SimpleStorage.sol\":57:155  contract SimpleStorage {... */\n  mstore(0x40, 0x80)\n    /* \"contracts/SimpleStorage.sol\":111:115  true */\n  0x01\n    /* \"contracts/SimpleStorage.sol\":86:115  bool hsaFaboriteNumber = true */\n  0x00\n  dup1\n  0x0100\n  exp\n  dup2\n  sload\n  dup2\n  0xff\n  mul\n  not\n  and\n  swap1\n  dup4\n  iszero\n  iszero\n  mul\n  or\n  swap1\n  sstore\n  pop\n    /* \"contracts/SimpleStorage.sol\":146:147  5 */\n  0x05\n    /* \"contracts/SimpleStorage.sol\":121:147  uint256 favoriteNumber = 5 */\n  0x01\n  sstore\n    /* \"contracts/SimpleStorage.sol\":57:155  contract SimpleStorage {... */\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/SimpleStorage.sol\":57:155  contract SimpleStorage {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220edf5f31ee91dfbbea32599f34caa393a4e7caecbeb4b74150e6ca87120a5a2b364736f6c63430008090033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "608060405260016000806101000a81548160ff0219169083151502179055506005600155348015602e57600080fd5b50603f80603c6000396000f3fe6080604052600080fdfea2646970667358221220edf5f31ee91dfbbea32599f34caa393a4e7caecbeb4b74150e6ca87120a5a2b364736f6c63430008090033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x1 PUSH1 0x0 DUP1 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH1 0xFF MUL NOT AND SWAP1 DUP4 ISZERO ISZERO MUL OR SWAP1 SSTORE POP PUSH1 0x5 PUSH1 0x1 SSTORE CALLVALUE DUP1 ISZERO PUSH1 0x2E JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x3C PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xED CREATE2 RETURN 0x1E 0xE9 SAR 0xFB 0xBE LOG3 0x25 SWAP10 RETURN 0x4C 0xAA CODECOPY GASPRICE 0x4E PUSH29 0xAECBEB4B74150E6CA87120A5A2B364736F6C6343000809003300000000 ",
+							"sourceMap": "57:98:0:-:0;;;111:4;86:29;;;;;;;;;;;;;;;;;;;;146:1;121:26;;57:98;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220edf5f31ee91dfbbea32599f34caa393a4e7caecbeb4b74150e6ca87120a5a2b364736f6c63430008090033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xED CREATE2 RETURN 0x1E 0xE9 SAR 0xFB 0xBE LOG3 0x25 SWAP10 RETURN 0x4C 0xAA CODECOPY GASPRICE 0x4E PUSH29 0xAECBEB4B74150E6CA87120A5A2B364736F6C6343000809003300000000 ",
+							"sourceMap": "57:98:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "46439",
+								"totalCost": "59039"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 111,
+									"end": 115,
+									"name": "PUSH",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "PUSH",
+									"source": 0,
+									"value": "100"
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "EXP",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "SLOAD",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FF"
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "NOT",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "DUP4",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "OR",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 115,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 146,
+									"end": 147,
+									"name": "PUSH",
+									"source": 0,
+									"value": "5"
+								},
+								{
+									"begin": 121,
+									"end": 147,
+									"name": "PUSH",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 121,
+									"end": 147,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 57,
+									"end": 155,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220edf5f31ee91dfbbea32599f34caa393a4e7caecbeb4b74150e6ca87120a5a2b364736f6c63430008090033",
+									".code": [
+										{
+											"begin": 57,
+											"end": 155,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 57,
+											"end": 155,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 57,
+											"end": 155,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 155,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 57,
+											"end": 155,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 57,
+											"end": 155,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/SimpleStorage.sol\":\"SimpleStorage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/SimpleStorage.sol\":{\"keccak256\":\"0x286e42bec3a4f67d7d0afe40824cb19cc92e3323a39fd8b6fde86bf3ddafec00\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://562e76ef8a7c02a0c95c43199f1c2ea386c51c55f9fc689cf5c216802b413313\",\"dweb:/ipfs/QmbB4NS9HYTc4aLRtAsL4Nunw9kjF51Fyi72MDCjsEz4b6\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 4,
+								"contract": "contracts/SimpleStorage.sol:SimpleStorage",
+								"label": "hsaFaboriteNumber",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_bool"
+							},
+							{
+								"astId": 7,
+								"contract": "contracts/SimpleStorage.sol:SimpleStorage",
+								"label": "favoriteNumber",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_uint256"
+							}
+						],
+						"types": {
+							"t_bool": {
+								"encoding": "inplace",
+								"label": "bool",
+								"numberOfBytes": "1"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/SimpleStorage.sol": {
+				"ast": {
+					"absolutePath": "contracts/SimpleStorage.sol",
+					"exportedSymbols": {
+						"SimpleStorage": [
+							8
+						]
+					},
+					"id": 9,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".8"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "32:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "SimpleStorage",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 8,
+							"linearizedBaseContracts": [
+								8
+							],
+							"name": "SimpleStorage",
+							"nameLocation": "66:13:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 4,
+									"mutability": "mutable",
+									"name": "hsaFaboriteNumber",
+									"nameLocation": "91:17:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "86:29:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_bool",
+										"typeString": "bool"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "bool",
+										"nodeType": "ElementaryTypeName",
+										"src": "86:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bool",
+											"typeString": "bool"
+										}
+									},
+									"value": {
+										"hexValue": "74727565",
+										"id": 3,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "bool",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "111:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bool",
+											"typeString": "bool"
+										},
+										"value": "true"
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 7,
+									"mutability": "mutable",
+									"name": "favoriteNumber",
+									"nameLocation": "129:14:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "121:26:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 5,
+										"name": "uint256",
+										"nodeType": "ElementaryTypeName",
+										"src": "121:7:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": {
+										"hexValue": "35",
+										"id": 6,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "146:1:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_5_by_1",
+											"typeString": "int_const 5"
+										},
+										"value": "5"
+									},
+									"visibility": "internal"
+								}
+							],
+							"scope": 9,
+							"src": "57:98:0",
+							"usedErrors": []
+						}
+					],
+					"src": "32:123:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

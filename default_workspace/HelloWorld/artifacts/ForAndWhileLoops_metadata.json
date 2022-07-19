@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "loops",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_n",
+						"type": "uint256"
+					}
+				],
+				"name": "sum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"HelloWorld/12ForAndWhileLoops.sol": "ForAndWhileLoops"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"HelloWorld/12ForAndWhileLoops.sol": {
+			"keccak256": "0x202a6a50366c09cc135078d1d41fe329c8d15cd69eba4cfdd575c05501c97e35",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9ee74ae49088973ca99ccea4d9c5a1c93f3fc3c94b8fb4fb3f462cacbdea9e07",
+				"dweb:/ipfs/QmPwRURAhTiKs8v9D3kBhV5v2JBo1dAUibe1j44hMW1GNm"
+			]
+		}
+	},
+	"version": 1
+}

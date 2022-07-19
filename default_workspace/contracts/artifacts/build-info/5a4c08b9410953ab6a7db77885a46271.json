@@ -1,0 +1,547 @@
+{
+	"id": "5a4c08b9410953ab6a7db77885a46271",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.15",
+	"solcLongVersion": "0.8.15+commit.e14f2714",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/Bytes32ToString.sol": {
+				"content": "//SPDX-License-Identifer: MIT\npragma solidity ^0.8.0;\n\ncontract Bytes32ToString {\n    bytes2 name = 0x7a68;\n    \n    \n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/Bytes32ToString.sol": {
+				"Bytes32ToString": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/Bytes32ToString.sol\":55:119  contract Bytes32ToString {... */\n  mstore(0x40, 0x80)\n    /* \"contracts/Bytes32ToString.sol\":100:106  0x7a68 */\n  0x7a68\n    /* \"contracts/Bytes32ToString.sol\":86:106  bytes2 name = 0x7a68 */\n  0xf0\n  shl\n  0x00\n  dup1\n  0x0100\n  exp\n  dup2\n  sload\n  dup2\n  0xffff\n  mul\n  not\n  and\n  swap1\n  dup4\n  0xf0\n  shr\n  mul\n  or\n  swap1\n  sstore\n  pop\n    /* \"contracts/Bytes32ToString.sol\":55:119  contract Bytes32ToString {... */\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/Bytes32ToString.sol\":55:119  contract Bytes32ToString {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220fb6f2aaac4cc17053e6f90f4674b0f32f9aa7e899885bdaac042f62f4b08682364736f6c634300080f0033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052617a6860f01b6000806101000a81548161ffff021916908360f01c0217905550348015602f57600080fd5b50603f80603d6000396000f3fe6080604052600080fdfea2646970667358221220fb6f2aaac4cc17053e6f90f4674b0f32f9aa7e899885bdaac042f62f4b08682364736f6c634300080f0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH2 0x7A68 PUSH1 0xF0 SHL PUSH1 0x0 DUP1 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH2 0xFFFF MUL NOT AND SWAP1 DUP4 PUSH1 0xF0 SHR MUL OR SWAP1 SSTORE POP CALLVALUE DUP1 ISZERO PUSH1 0x2F JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x3D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xFB PUSH16 0x2AAAC4CC17053E6F90F4674B0F32F9AA PUSH31 0x899885BDAAC042F62F4B08682364736F6C634300080F003300000000000000 ",
+							"sourceMap": "55:64:0:-:0;;;100:6;86:20;;;;;;;;;;;;;;;;;;;;;;55:64;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220fb6f2aaac4cc17053e6f90f4674b0f32f9aa7e899885bdaac042f62f4b08682364736f6c634300080f0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xFB PUSH16 0x2AAAC4CC17053E6F90F4674B0F32F9AA PUSH31 0x899885BDAAC042F62F4B08682364736F6C634300080F003300000000000000 ",
+							"sourceMap": "55:64:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "24339",
+								"totalCost": "36939"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 100,
+									"end": 106,
+									"name": "PUSH",
+									"source": 0,
+									"value": "7A68"
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "PUSH",
+									"source": 0,
+									"value": "F0"
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "SHL",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "PUSH",
+									"source": 0,
+									"value": "100"
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "EXP",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "SLOAD",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFF"
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "NOT",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "DUP4",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "PUSH",
+									"source": 0,
+									"value": "F0"
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "SHR",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "OR",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 86,
+									"end": 106,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 55,
+									"end": 119,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220fb6f2aaac4cc17053e6f90f4674b0f32f9aa7e899885bdaac042f62f4b08682364736f6c634300080f0033",
+									".code": [
+										{
+											"begin": 55,
+											"end": 119,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 55,
+											"end": 119,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 55,
+											"end": 119,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 55,
+											"end": 119,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 55,
+											"end": 119,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 55,
+											"end": 119,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"contracts/Bytes32ToString.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Bytes32ToString.sol\":\"Bytes32ToString\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Bytes32ToString.sol\":{\"keccak256\":\"0xc4e614c3550243053445b1b12c7cea6134dc56d692d8754d3d7a561413ae7ce7\",\"urls\":[\"bzz-raw://cd731dbd7ce43eb48ab13e831f5744326c64551373bca50f8193dc9d186bc2f7\",\"dweb:/ipfs/QmXXDEKYXnSPzAAYtqYrJBBuq85KkrktX32xDVhoRZ1ckA\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 4,
+								"contract": "contracts/Bytes32ToString.sol:Bytes32ToString",
+								"label": "name",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_bytes2"
+							}
+						],
+						"types": {
+							"t_bytes2": {
+								"encoding": "inplace",
+								"label": "bytes2",
+								"numberOfBytes": "2"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/Bytes32ToString.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/Bytes32ToString.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/Bytes32ToString.sol": {
+				"ast": {
+					"absolutePath": "contracts/Bytes32ToString.sol",
+					"exportedSymbols": {
+						"Bytes32ToString": [
+							5
+						]
+					},
+					"id": 6,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "30:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "Bytes32ToString",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 5,
+							"linearizedBaseContracts": [
+								5
+							],
+							"name": "Bytes32ToString",
+							"nameLocation": "64:15:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 4,
+									"mutability": "mutable",
+									"name": "name",
+									"nameLocation": "93:4:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 5,
+									"src": "86:20:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_bytes2",
+										"typeString": "bytes2"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "bytes2",
+										"nodeType": "ElementaryTypeName",
+										"src": "86:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bytes2",
+											"typeString": "bytes2"
+										}
+									},
+									"value": {
+										"hexValue": "307837613638",
+										"id": 3,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "100:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_31336_by_1",
+											"typeString": "int_const 31336"
+										},
+										"value": "0x7a68"
+									},
+									"visibility": "internal"
+								}
+							],
+							"scope": 6,
+							"src": "55:64:0",
+							"usedErrors": []
+						}
+					],
+					"src": "30:89:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

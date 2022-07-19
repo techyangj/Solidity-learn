@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "money",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Destruct.sol": "Destruct"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Destruct.sol": {
+			"keccak256": "0xcd944e22a4133887ead5f1d93ae11e50b1f1d73197fa4889d98e70ca6ec998db",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b21c2edd84bbb5929e21862d3cee2f0210723344e8d10cd393e1a10834288ed6",
+				"dweb:/ipfs/QmRPf2bJbGtNyGw2TYG65Y6cysgEBDrt2SyQeymAwSSXhs"
+			]
+		}
+	},
+	"version": 1
+}

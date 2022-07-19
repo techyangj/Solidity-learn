@@ -1,0 +1,216 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint64",
+						"name": "subscriptionId",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "have",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "want",
+						"type": "address"
+					}
+				],
+				"name": "OnlyCoordinatorCanFulfill",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "requestId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "result",
+						"type": "uint256"
+					}
+				],
+				"name": "DiceLanded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "requestId",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "roller",
+						"type": "address"
+					}
+				],
+				"name": "DiceRolled",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "player",
+						"type": "address"
+					}
+				],
+				"name": "house",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "requestId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "randomWords",
+						"type": "uint256[]"
+					}
+				],
+				"name": "rawFulfillRandomWords",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "roller",
+						"type": "address"
+					}
+				],
+				"name": "rollDice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "requestId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "This is only an example implementation and not necessarily suitable for mainnet.",
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "NETWORK: RINKEBY",
+					"params": {
+						"subscriptionId": "subscription id that this consumer contract can use"
+					}
+				},
+				"house(address)": {
+					"params": {
+						"player": "address"
+					},
+					"returns": {
+						"_0": "house as a string"
+					}
+				},
+				"rollDice(address)": {
+					"details": "Warning: if the VRF response is delayed, avoid calling requestRandomness repeatedly as that would give miners/VRF operators latitude about which VRF response arrives first.You must review your implementation details with extreme care.",
+					"params": {
+						"roller": "address of the roller"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"constructor": {
+					"notice": "Constructor inherits VRFConsumerBaseV2"
+				},
+				"house(address)": {
+					"notice": "Get the house assigned to the player once the address has rolled"
+				},
+				"rollDice(address)": {
+					"notice": "Requests randomness"
+				}
+			},
+			"notice": "A Chainlink VRF consumer which uses randomness to mimic the rolling of a 20 sided dice",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ChainLink_learn/VRFD20.sol": "VRFD20"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol": {
+			"keccak256": "0x3d709a5e0f1f9b8841172b10ba8af785dd51a13eda9fc395723a706e51329904",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://038eef992d813c20737fbe94e3a36e5d541d1aa736158dd2a43dd5b840b8c360",
+				"dweb:/ipfs/QmZWJ25Yr1sUSAsfJRKvTMDmGkmy63hHhB495CUL1bpNz4"
+			]
+		},
+		"@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol": {
+			"keccak256": "0xcb29ee50ee2b05441e4deebf8b4756a0feec4f5497e36b6a1ca320f7ce561802",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://87b4f2ac9fe4e83334c0cc7b070989f133647f20c2b2e8f2224e10d37bebc6df",
+				"dweb:/ipfs/QmYS2z7xmTArVpxiNM8Czj1qKL56HMw61Lzdjto9m3B5PL"
+			]
+		},
+		"ChainLink_learn/VRFD20.sol": {
+			"keccak256": "0x4b1efb4a0dbdf886e273f71fc73d72efeebff83ff8e6c55c938132b7c90000b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://80dc2b05d84a7449644f1798108156fb51204ef7f5aa71a74efa81ee103ba715",
+				"dweb:/ipfs/QmdhEJ3F29Eq259FFWdf7cuSpAWytdz22EzPLuZzh5jJCm"
+			]
+		}
+	},
+	"version": 1
+}

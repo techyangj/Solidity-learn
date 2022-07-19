@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fixBytesTodynamicBytes",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/fixToDynamic.sol": "fixToDynamic"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/fixToDynamic.sol": {
+			"keccak256": "0x9b5edf7385648f206a82c6331819c5e39fa53e77f71d6aa1998185ee031e9830",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b4ea676a7d96890f2e19a73a88a54b5ad6b92a19f9047b0ebeac0a599a32c642",
+				"dweb:/ipfs/QmPyLJydAFrPAM5uChtvRxWPz76FpRFSjTDy21xespNPRT"
+			]
+		}
+	},
+	"version": 1
+}

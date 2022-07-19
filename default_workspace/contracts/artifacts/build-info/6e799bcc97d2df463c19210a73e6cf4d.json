@@ -1,0 +1,68 @@
+{
+	"id": "6e799bcc97d2df463c19210a73e6cf4d",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.9",
+	"solcLongVersion": "0.8.9+commit.e5eed63a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/SimpleStorage.sol": {
+				"content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.8;\n\n// contract SimpleStorage {\n//     bool hsaFaboriteNumber = true;\n//     uint256 favoriteNumber = 5;\n//     string favoriteNumberInText = \"Five\";\n//     int256 favoriteInt = -5;\n//     address myAddress = 0x300170eC894d281CB6392E153B17eB3Fe870D00d;\n//     bytes32 favoriteBytes = \"cat\";\n// }"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"contracts/SimpleStorage.sol": {
+				"ast": {
+					"absolutePath": "contracts/SimpleStorage.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".8"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "32:23:0"
+						}
+					],
+					"src": "32:316:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

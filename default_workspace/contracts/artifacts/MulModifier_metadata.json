@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "a",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "test",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MulModifier.sol": "MulModifier"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MulModifier.sol": {
+			"keccak256": "0xbba62fb3e63d3957e83e75cd92944f58840e567690b7754f7fe7bf393592b2b3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://67a06a7a41e837ab845347efc8e5bfd5fd0c63d667d82b3087f662bb71d7d6bb",
+				"dweb:/ipfs/QmbvvELHjps1XmfQabTsYeSBKLF7BvPKq95J7wGBBwpCMU"
+			]
+		}
+	},
+	"version": 1
+}

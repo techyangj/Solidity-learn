@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Init",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "bytesToString",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/BytesToString.sol": "BytesToString"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/BytesToString.sol": {
+			"keccak256": "0xc5f19c86d98032c75e53f7b5cbf9f97e9a6a6bf304fc35d13b200f43da20c7c0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://22135400aa2fbf528352f7fe6cbceb32859a0c0a08b3979c166c1484b7ba1e1d",
+				"dweb:/ipfs/QmbgHN1kxPsgFREz3jgkNp3DccMSRhzhFya9AvLa2ZqkaZ"
+			]
+		}
+	},
+	"version": 1
+}

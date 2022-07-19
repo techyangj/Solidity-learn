@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FixedMath_test.sol": "FixedMath_test"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/FixedMath_test.sol": {
+			"keccak256": "0x021203117379b976b6aca90b4785389eeb53309249684a7fa58ee5ef2479ac7b",
+			"urls": [
+				"bzz-raw://a2f7e568657dc273ba3d8cf7407a17a726571e2dce1195b30b656dfd891c716f",
+				"dweb:/ipfs/Qmdyrpd6A5MTXTJGLNkTGSnkXEVHHfAdU99DN8uYFwFF9F"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "a",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b",
+						"type": "uint256"
+					}
+				],
+				"name": "isSameNum",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ChainLink_learn/Interface_Test.sol": "Test"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ChainLink_learn/Interface_Test.sol": {
+			"keccak256": "0x9426e6aee060d8072902266b72a3514425bff24f169837f4ffd5845f8e2c0eca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ec472a12c79fa2ba84fc3ec8ae4c695750f7aeace97114f05daf98aef7657ae5",
+				"dweb:/ipfs/QmQJqCZLNPxmvxrfFrkvpgjJ3R62K6ez8QUZ5aWyJhFEpE"
+			]
+		}
+	},
+	"version": 1
+}

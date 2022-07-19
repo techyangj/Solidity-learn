@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getArrayLiteral",
+				"outputs": [
+					{
+						"internalType": "uint256[3]",
+						"name": "",
+						"type": "uint256[3]"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ArrayLiterals.sol": "ArrayLiterals"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ArrayLiterals.sol": {
+			"keccak256": "0xf7a4ccad28fc46a47886e895b5b80e6137cd60a277e2e98aab508e76a3312881",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://62617a882a1de833f294969030be4d49aeafad3995b055e59afecb04d3b61e52",
+				"dweb:/ipfs/QmdtnrJbWABYPQJe3v3FdS1JpQvQyYrzcDhiW8ayounBSM"
+			]
+		}
+	},
+	"version": 1
+}

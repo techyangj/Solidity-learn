@@ -1,0 +1,418 @@
+{
+	"id": "b02dae0ad0bcf26a680ad50f2ab540d4",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.15",
+	"solcLongVersion": "0.8.15+commit.e14f2714",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/Test.sol": {
+				"content": "//SPDX-License-Identifier: MIT\npragma solidity ^0.8.6;\n\ncontract Test {\n    enum ActionChoices { GoLeft, GoRight, GoStraight, SitStill}\n    ActionChoices choice;\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/Test.sol": {
+				"Test": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/Test.sol\":56:163  contract Test {... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/Test.sol\":56:163  contract Test {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220959fa370dc16f660064dd7d736914cc9c5aa222414a993782246772eadbd350c64736f6c634300080f0033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220959fa370dc16f660064dd7d736914cc9c5aa222414a993782246772eadbd350c64736f6c634300080f0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SWAP6 SWAP16 LOG3 PUSH17 0xDC16F660064DD7D736914CC9C5AA222414 0xA9 SWAP4 PUSH25 0x2246772EADBD350C64736F6C634300080F0033000000000000 ",
+							"sourceMap": "56:107:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220959fa370dc16f660064dd7d736914cc9c5aa222414a993782246772eadbd350c64736f6c634300080f0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SWAP6 SWAP16 LOG3 PUSH17 0xDC16F660064DD7D736914CC9C5AA222414 0xA9 SWAP4 PUSH25 0x2246772EADBD350C64736F6C634300080F0033000000000000 ",
+							"sourceMap": "56:107:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 56,
+									"end": 163,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220959fa370dc16f660064dd7d736914cc9c5aa222414a993782246772eadbd350c64736f6c634300080f0033",
+									".code": [
+										{
+											"begin": 56,
+											"end": 163,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 56,
+											"end": 163,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 56,
+											"end": 163,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 56,
+											"end": 163,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 56,
+											"end": 163,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 56,
+											"end": 163,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							},
+							"sourceList": [
+								"contracts/Test.sol",
+								"#utility.yul"
+							]
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Test.sol\":\"Test\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Test.sol\":{\"keccak256\":\"0x4fcb076d013a8befcca2eda198977c5cb16d0f9599b0a19aebc20a6da07a2d3d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7d1cc53bb69e033ef42c7d719fb396e982b1fa190088c00883adfd14b6082b57\",\"dweb:/ipfs/QmQycmsP9MTN85JH4JMUcWkzcG4qSnZoixPzsKrvg3XrSC\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 9,
+								"contract": "contracts/Test.sol:Test",
+								"label": "choice",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_enum(ActionChoices)6"
+							}
+						],
+						"types": {
+							"t_enum(ActionChoices)6": {
+								"encoding": "inplace",
+								"label": "enum Test.ActionChoices",
+								"numberOfBytes": "1"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"contracts/Test.sol": {
+				"ast": {
+					"absolutePath": "contracts/Test.sol",
+					"exportedSymbols": {
+						"Test": [
+							10
+						]
+					},
+					"id": 11,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".6"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "31:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "Test",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 10,
+							"linearizedBaseContracts": [
+								10
+							],
+							"name": "Test",
+							"nameLocation": "65:4:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "Test.ActionChoices",
+									"id": 6,
+									"members": [
+										{
+											"id": 2,
+											"name": "GoLeft",
+											"nameLocation": "97:6:0",
+											"nodeType": "EnumValue",
+											"src": "97:6:0"
+										},
+										{
+											"id": 3,
+											"name": "GoRight",
+											"nameLocation": "105:7:0",
+											"nodeType": "EnumValue",
+											"src": "105:7:0"
+										},
+										{
+											"id": 4,
+											"name": "GoStraight",
+											"nameLocation": "114:10:0",
+											"nodeType": "EnumValue",
+											"src": "114:10:0"
+										},
+										{
+											"id": 5,
+											"name": "SitStill",
+											"nameLocation": "126:8:0",
+											"nodeType": "EnumValue",
+											"src": "126:8:0"
+										}
+									],
+									"name": "ActionChoices",
+									"nameLocation": "81:13:0",
+									"nodeType": "EnumDefinition",
+									"src": "76:59:0"
+								},
+								{
+									"constant": false,
+									"id": 9,
+									"mutability": "mutable",
+									"name": "choice",
+									"nameLocation": "154:6:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "140:20:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_enum$_ActionChoices_$6",
+										"typeString": "enum Test.ActionChoices"
+									},
+									"typeName": {
+										"id": 8,
+										"nodeType": "UserDefinedTypeName",
+										"pathNode": {
+											"id": 7,
+											"name": "ActionChoices",
+											"nodeType": "IdentifierPath",
+											"referencedDeclaration": 6,
+											"src": "140:13:0"
+										},
+										"referencedDeclaration": 6,
+										"src": "140:13:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_enum$_ActionChoices_$6",
+											"typeString": "enum Test.ActionChoices"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"scope": 11,
+							"src": "56:107:0",
+							"usedErrors": []
+						}
+					],
+					"src": "31:132:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
